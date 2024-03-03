@@ -12,6 +12,7 @@ void bindVAO(Vao vao){
 }
 
 void setVAOAttrib(Vao vao, Vbo vbo, GLuint index, GLint size, GLenum type, GLsizei stride, size_t offset){
+    bindVBO(vbo);
     switch (type) {
         case GL_BYTE:
         case GL_UNSIGNED_BYTE:

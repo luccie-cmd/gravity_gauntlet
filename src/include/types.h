@@ -4,6 +4,8 @@
 typedef struct{
     float x, y;
 } Vector2;
+#define VECTOR2_FMT "x: %f y: %f"
+#define VECTOR2_ARG(V) V.x, V.y
 
 typedef struct{
     int r, g, b, a;

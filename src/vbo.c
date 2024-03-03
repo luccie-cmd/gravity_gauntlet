@@ -7,9 +7,12 @@ Vbo getVBO(GLint type, GLboolean dynamic){
     glGenBuffers(1, &vbo.handle);
     return vbo;
 }
+
 void bindVBO(Vbo vbo){
     glBindBuffer(vbo.type, vbo.handle);
 }
+
 void setVBOBuffer(Vbo vbo, void *data, size_t size){
+    bindVBO(vbo);
     glBufferData(vbo.type, size, data, vbo.dynamic ? GL_DYNAMIC_DRAW : GL_STATIC_DRAW);
 }

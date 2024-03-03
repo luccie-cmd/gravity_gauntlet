@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "include/player.h"
 #include "include/renderer.h"
+#include <stdio.h>
 
 Player* init_player(int x, int y){
     Player *player = malloc(sizeof(Player));
