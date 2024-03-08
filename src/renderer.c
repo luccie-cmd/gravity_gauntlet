@@ -7,9 +7,9 @@
 static Vector2 switchToOpenGLCoords(Vector2 coords){
     Vector2 openGLVector;
     // Convert x coordinate
-    openGLVector.x = (coords.x / 1280.0f) * 2.0f - 1.0f;
+    openGLVector.x = (coords.x / 1920.0f) * 2.0f - 1.0f;
     // Convert y coordinate
-    openGLVector.y = 1.0f - (coords.y / 720.0f) * 2.0;
+    openGLVector.y = 1.0f - (coords.y / 1080.0f) * 2.0;
     return openGLVector;
 }
 

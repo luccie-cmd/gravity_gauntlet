@@ -6,7 +6,7 @@
 
 
 char* readFile(const char* name){
-    FILE* f = fopen(name, "r");
+    FILE* f = fopen(name, "rb");
     if(!f){
         printf("Error: %s: %s\n", name, strerror(errno));
         exit(1);
@@ -22,6 +22,7 @@ char* readFile(const char* name){
         exit(1);
     }
     fread(buffer, 1, size, f);
+    fclose(f);
     buffer[size] = '\0';
     return buffer;
 }
