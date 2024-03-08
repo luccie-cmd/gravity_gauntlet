@@ -55,7 +55,8 @@ int main(){
                     switch(evs.key.keysym.sym){
                         case SDLK_a:
                         case SDLK_d: {
-                            player->left_right_dir = DIRECTION_NONE;
+                            player->left_right_dir = DIRECTION_DOWN;
+                            player->velocity.x = 0;
                         } break;
                     }
                 } break;

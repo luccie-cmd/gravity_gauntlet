@@ -78,5 +78,4 @@ void move_player(Player *player){
             }
         } break;
     }
-    printf(VECTOR2_FMT "\n", VECTOR2_ARG(player->pos));
 }

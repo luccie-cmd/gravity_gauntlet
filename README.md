@@ -3,6 +3,7 @@
 ## A Game where the main mechanic is gravity
 
 #### Getting started
+(On windows) make sure that the SDL2.dll in the lib folder is in the build folder when executing otherwise it will not work
 you get all the source code avaiable and you just compile it with
 `$ make -B`
 and that should get you started with playing
